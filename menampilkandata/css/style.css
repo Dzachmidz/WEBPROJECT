@@ -3,17 +3,23 @@ body {
     margin: 0;
 }
 
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
 nav {
     display: flex;
-    justify-content: space-around;
     align-items: center;
     background-color: #75dce5;
     margin-bottom: 20px;
     border-bottom: 1px solid #514f4f;
+    width: 100%;
 }
 
 h1 {
-    text-align: center;
+    text-align: left;
     flex-grow: 1;
 }
 
@@ -21,6 +27,7 @@ ul {
     list-style: none;
     display: flex;
     padding-right: 15px;
+    margin:0 auto;
 }
 
 li {
@@ -47,6 +54,17 @@ a {
     color: black;
 }
 
+table.container{
+    width: 80%;
+    max-height: 100vh;
+    border-collapse: collapse;
+    border: 1px solid black;
+    margin: 0 auto;
+    text-align: left;
+    overflow: auto;
+}
+    
+
 table {
     width: 90%;
     max-height: 100vh;
@@ -57,6 +75,10 @@ table {
     overflow: auto;
 }
 
+tr,td.container{
+    font-size: 15px;
+}
+
 th,td {
     padding: 8px;
     border: 1px solid black;
@@ -65,4 +87,4 @@ th,td {
 
 th {
     background-color: #75dce5;
-} 
+}

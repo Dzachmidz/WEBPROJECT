@@ -1,5 +1,5 @@
 <?php
-include('database.php');
+include('koneksi.php');
 ?>
 
 <!DOCTYPE html>
@@ -8,19 +8,25 @@ include('database.php');
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../css/style.css">
     <title>Classic Models</title>
 </head>
 <body>
     <nav>
-        <h1>Classic Models</h1>
+        <h1>Classic Models Product Line</h1>
         <ul>
-            <li><a href="employee.php">Employee</a></li>
-            <li><a href="productline.php">Product Line</a></li>
+            <li><a href="../main/customer.php">Customers</a></li>
+            <li><a href="../main/employee.php">Employees</a></li>
+            <li><a href="../main/productline.php">Product Lines</a></li>
+            <li><a href="../main/products.php">Products</a></li>
         </ul>
     </nav>
-
-    <div>
+    <div class="tambahdata">
+        <ul>
+            <li><a href="<?php echo "../customers/form.php"; ?>"><b>Menambah Data</b></a></li>
+        </ul>
+    </div>
+    <div id="tableproduct">
         <table>
             <thead>
                 <tr>
@@ -33,7 +39,7 @@ include('database.php');
             <tbody>
                 <?php
                 $query = "SELECT * FROM productlines";
-                $result = mysqli_query($conn, $query);
+                $result = mysqli_query(connection(), $query);
 
                 if (mysqli_num_rows($result) > 0){
                     while ($row = mysqli_fetch_assoc($result)){
@@ -57,7 +63,7 @@ include('database.php');
                 } else {
                     echo "Data tidak ada";
                 }
-                mysqli_close($conn);
+                mysqli_close(connection());
                 ?>
                 </tr>
             </tbody>

@@ -1,7 +1,7 @@
 <?php 
   //memanggil file conn.php yang berisi koneski ke database
   //dengan include, semua kode dalam file conn.php dapat digunakan pada file index.php
-  include ('../main/koneksi.php'); 
+  include ('koneksi.php'); 
 
   $status = '';
   //melakukan pengecekan apakah ada form yang dipost
@@ -32,17 +32,17 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="stylesheet"href="../product/style.css">
+    <link rel="stylesheet"href="style.css">
     <title>Tambah Data</title>
 </head>
 <body>
     <nav>
         <h1>Modifikasi Data</h1>
         <ul>
-            <li><a href="<?php echo "../main/products.php"; ?>">Data Product</a></li>
-            <li><a href="<?php echo "../product/form.php"; ?>">Tambah Data</a></li>
-            <li><a href="<?php echo "../product/update.php"; ?>">Update Data</a></li>
-            <li><a href="<?php echo "../product/delete.php"; ?>">Hapus Data</a></li>
+            <li><a href="<?php echo "../product/products.php"; ?>">Data Product</a></li>
+            <li><a href="<?php echo "form.php"; ?>">Tambah Data</a></li>
+            <li><a href="<?php echo "update.php"; ?>">Update Data</a></li>
+            <li><a href="<?php echo "delete.php"; ?>">Hapus Data</a></li>
         </ul>
     </nav>
         <tr >

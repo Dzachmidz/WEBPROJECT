@@ -1,5 +1,5 @@
 <?php
-include('../main/koneksi.php');
+include('koneksi.php');
 ?>
 
 <!DOCTYPE html>
@@ -8,22 +8,22 @@ include('../main/koneksi.php');
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="style.css">
     <title>Classic Models</title>
 </head>
 <body>
     <nav>
         <h1>Classic Models Customer</h1>
             <ul>
-                <li><a href="../main/customer.php">Customers</a></li>
-                <li><a href="../main/employee.php">Employees</a></li>
-                <li><a href="../main/productline.php">Product Lines</a></li>
-                <li><a href="../main/products.php">Products</a></li>
+                <li><a href="customer.php">Customers</a></li>
+                <li><a href="employee.php">Employees</a></li>
+                <li><a href="productline.php">Product Lines</a></li>
+                <li><a href="../product/products.php">Products</a></li>
             </ul>
     </nav>
-    <div class="tambahdata">
+    <div class="modifikasidata">
         <ul>
-            <li><a href="<?php echo "../customers/form.php"; ?>"><b>Tambah Data</b></a></li>
+            <li><a href="<?php echo "form.php"; ?>"><b>Modifikasi Data</b></a></li>
         </ul>
     </div>
         <div class="container">
@@ -50,63 +50,56 @@ include('../main/koneksi.php');
                 <?php
                 $query = "SELECT * FROM customers";
                 $result = mysqli_query(connection(), $query);
-
-                if (mysqli_num_rows($result) > 0){
-                    while ($row = mysqli_fetch_assoc($result)){
-                        ?>
+                ?>
+                            <?php 
+                                    while($data = mysqli_fetch_array($result)): 
+                                ?>
+                      
                         <tr>
                             <td>
-                                <?php echo $row ['customerNumber'];?>
+                                <?php echo $data ['customerNumber'];?>
                             </td>
                             <td>
-                                <?php echo $row['customerName']; ?>
+                                <?php echo $data['customerName']; ?>
                             </td>
                             <td>
-                                <?php echo $row['contactLastName']; ?>
+                                <?php echo $data['contactLastName']; ?>
                             </td>
                             <td>
-                                <?php echo $row['contactFirstName']; ?>
+                                <?php echo $data['contactFirstName']; ?>
                             </td>
                             <td>
-                                <?php echo $row['phone']; ?>
+                                <?php echo $data['phone']; ?>
                             </td>
                             <td>
-                                <?php echo $row['addressLine1']; ?>
+                                <?php echo $data['addressLine1']; ?>
                             </td>
                             <td>
-                                <?php echo $row['addressLine2']; ?>
+                                <?php echo $data['addressLine2']; ?>
                             </td>
                             <td>
-                                <?php echo $row['city']; ?>
+                                <?php echo $data['city']; ?>
                             </td>
                             <td>
-                                <?php echo $row['state']; ?>
+                                <?php echo $data['state']; ?>
                             </td>
                             <td>
-                                <?php echo $row['postalCode']; ?>
+                                <?php echo $data['postalCode']; ?>
                             </td>
                             <td>
-                                <?php echo $row['country']; ?>
+                                <?php echo $data['country']; ?>
                             </td>
                             <td>
-                                <?php echo $row['salesRepEmployeeNumber']; ?>
+                                <?php echo $data['salesRepEmployeeNumber']; ?>
                             </td>
                             <td>
-                                <?php echo $row['creditLimit']; ?>
+                                <?php echo $data['creditLimit']; ?>
                             </td>
                             <td>
-                                <a href="<?php echo "../customers/update.php?customerNumber=".$data['customerNumber']; ?>" > Update</a>
-                            &nbsp;&nbsp;
-                                <a href="<?php echo "../customers/delete.php?customerNumber=".$data['customerNumber']; ?>"> Delete</a>
+                            <li><a href="<?php echo "update.php?customerNumber=".$data['customerNumber']; ?>"> Update</a></li>
+                           <li><a href="<?php echo "delete.php?customerNumber=".$data['customerNumber']; ?>"> Delete</a></li>
                             </td>
-                            <?php
-                    } 
-                    mysqli_free_result($result);
-                } else {
-                    echo "Data tidak ada";
-                }
-                mysqli_close(connection());
-                ?>
+                     <?php endwhile ?>
                 </tr>
                 
             </tbody>

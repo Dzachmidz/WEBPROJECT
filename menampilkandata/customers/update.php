@@ -1,7 +1,7 @@
 <?php
   //memanggil file conn.php yang berisi koneski ke database
   //dengan include, semua kode dalam file conn.php dapat digunakan pada file index.php
-  include ('../main/koneksi.php');
+  include ('koneksi.php');
 
   $status = '';
   $result = '';
@@ -33,7 +33,7 @@
     $salesRepEmployeeNumber = $_POST['salesRepEmployeeNumber'];
     $creditLimit = $_POST['creditLimit'];
       //query SQL
-      $sql = "UPDATE customers SET customerNumber='$customerNumber', customerName='$customerName', contactLastName='$contactLastName', contactFirstName='$contactFirstName', phone='$phone', addressLine1='$addressLine1', addressLine2='$addressLine2', city='$city', state='$state', postalCode='$postalCode', country='$country', salesRepEmployeeNumber='$salesRepEmployeeNumber', creditLimit='$creditLimit' WHERE customerNumber='$customerNumber'";
+      $sql = "UPDATE customers SET customerName='$customerName', contactLastName='$contactLastName', contactFirstName='$contactFirstName', phone='$phone', addressLine1='$addressLine1', addressLine2='$addressLine2', city='$city', state='$state', postalCode='$postalCode', country='$country', salesRepEmployeeNumber='$salesRepEmployeeNumber', creditLimit='$creditLimit' WHERE customerNumber='$customerNumber'";
 
       //eksekusi query
       $result = mysqli_query(connection(),$sql);
@@ -45,14 +45,14 @@
       }
 
       //redirect ke halaman lain
-      header('Location: customers.php?status='.$status);
+      header('Location: customer.php?status='.$status);
   }
 ?>
 
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="stylesheet"href="../customers/style.css">
+    <link rel="stylesheet"href="style.css">
     <title>Update Data</title>
 </head>
 <body>

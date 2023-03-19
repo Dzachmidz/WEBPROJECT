@@ -29,7 +29,7 @@
     $buyPrice = $_POST['buyPrice'];
     $MSRP = $_POST['MSRP'];
       //query SQL
-      $sql = "UPDATE Products SET productName='$productName', productLine='$productLine', productScale='$productScale', productVendor='$productVendor', productDescription='$productDescription', quantityInStock='$quantityInStock', buyPrice='$buyPrice', MSRP='$MSRP' WHERE productCode='$productCode'";
+      $sql = "UPDATE Products    SET productName='$productName', productLine='$productLine', productScale='$productScale', productVendor='$productVendor', productDescription='$productDescription', quantityInStock='$quantityInStock', buyPrice='$buyPrice', MSRP='$MSRP' WHERE productCode='$productCode'";
 
       //eksekusi query
       $result = mysqli_query(connection(),$sql);

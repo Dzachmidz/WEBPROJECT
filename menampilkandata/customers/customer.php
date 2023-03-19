@@ -1,5 +1,5 @@
 <?php
-include('koneksi.php');
+include('../customers/koneksi.php');
 ?>
 
 <!DOCTYPE html>
@@ -18,7 +18,7 @@ include('koneksi.php');
                 <li><a href="customer.php">Customers</a></li>
                 <li><a href="employee.php">Employees</a></li>
                 <li><a href="productline.php">Product Lines</a></li>
-                <li><a href="../product/products.php">Products</a></li>
+                <li><a href="products.php">Products</a></li>
             </ul>
     </nav>
     <div class="modifikasidata">

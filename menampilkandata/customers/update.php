@@ -1,7 +1,7 @@
 <?php
   //memanggil file conn.php yang berisi koneski ke database
   //dengan include, semua kode dalam file conn.php dapat digunakan pada file index.php
-  include ('koneksi.php');
+  include ('../customers/koneksi.php');
 
   $status = '';
   $result = '';
@@ -52,7 +52,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="stylesheet"href="style.css">
+    <link rel="stylesheet"href="../customers/style.css">
     <title>Update Data</title>
 </head>
 <body>

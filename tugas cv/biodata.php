@@ -1,3 +1,7 @@
+<?php
+require "variabel.php";
+?>
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -16,38 +20,39 @@ body {
 </style>
 <body>
     <h1 align="center">Biodata Saya</h1>
-    <hr width="600px" style="2">
+    <hr width="600px">
     <table align="center" cellpadding="5" align="center" width="700">
+        <?php foreach ($biodata as $bio) : ?>
     <tr>
         <td>Nama</td>
         <td>:</td>
-        <td>Achmad Fahmi Al Hafidz</td>
+        <td><?php echo $bio ['nama']; ?></td>
         <td rowspan="5" align="center"><img src="foto.jpeg" width="150px"  style="display: block;border-radius: 50%;border-color:white;margin-right:30px" border="2px"></td>
     </tr>
     <tr>
         <td>NPM</td>
         <td>:</td>
-        <td>21081010223</td>
+        <td><?php echo $bio ['npm']; ?></td>
     </tr>
     <tr>
         <td>Tempat, Tanggal Lahir</td>
         <td>:</td>
-        <td>Sidoarjo, 20 September 2002</td>
+        <td><?php echo $bio ['ttl']; ?></td>
     </tr>
     <tr>
         <td>Alamat</td>
         <td>:</td>
-        <td>Sugihwaras Candi Sidoarjo</td>
+        <td><?php echo $bio ['alamat']; ?></td>
     </tr>
     <tr>
         <td>Hobi</td>
         <td>:</td>
-        <td>Badminton dan Bermain Musik</td>
+        <td><?php echo $bio ['hobi']; ?></td>
     </tr>
     <tr>
         <td>Email</td>
         <td>:</td>
-        <td>21081010223@student.upnjatim.ac.id</td>
+        <td><?php echo $bio ['email']; ?></td>
     </tr>
     </table>
     <footer>

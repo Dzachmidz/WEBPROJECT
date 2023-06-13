@@ -1,0 +1,74 @@
+h1{
+    margin: 0 auto;
+}
+
+body{
+    background-image: url("../Gambar/background/23.png");
+    text-align: center;
+    color: white;
+}
+.logo{
+    background-image: url("../Gambar/logo/fiksneak.png");
+    height: 306px;
+    width: 502px;
+}
+.logo1{
+    background-image: url("../Gambar/logo/user.png");
+    width: 230px;
+    height: 30px;
+    left: 726px;
+    top: 561px;
+    background-repeat: no-repeat;
+}
+
+
+.logo2{
+    background-image: url("../Gambar/logo/union-1.png");
+    width: 230px;
+    height: 28.24px;
+    left: 702.88px;
+    top: 692.15px;
+    background-repeat: no-repeat;
+}
+
+.logo3{
+    background-image: url("../Gambar/logo/mail.png");
+    width: 230px;
+    height: 28.24px;
+    left: 702.88px;
+    top: 565.06px;
+    background-repeat: no-repeat;
+}
+
+a{
+    text-align: center;
+    font-family: "Barlow";
+    font-style: italic;
+}
+
+form{
+    text-align: center;
+}
+
+a{
+    color: white;
+}
+
+input{
+    width: 230px;
+    height: 25px;
+    left: 722px;
+    top: 558px;
+
+    background: #4B4B4B;
+    border-radius: 17px;
+
+    text-align: center;
+}
+.logobuy{
+    position: absolute;
+    width: 266.44px;
+    height: 77px;
+    left: 1369px;
+    top: 986px;
+}

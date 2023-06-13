@@ -1,0 +1,162 @@
+h1{
+    position: fixed ;
+    width: 341px;
+    height: 139px;
+    margin-bottom: 10px;
+    padding-left: 1200px;
+    font-family: 'Barlow';
+    font-style: italic;
+    font-weight: 700;
+    font-size: 160px;
+    line-height: 154px;
+    color: #ffffff;
+}
+
+p.gambarlogo{
+    position: fixed;
+}
+
+body{
+    background-image: url(background\ 1.png);
+    background-size: cover;
+    background-attachment: fixed;
+    }
+
+div.header{
+    position: fixed;
+    width: 100%;
+    height: 510px;
+    left: 4px;
+    top: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #0B0B0B;
+}
+
+div.logo{
+    position: fixed;
+    width: 211px;
+    height: 158px;
+    left: 64px;
+    top: 36px;
+    background: url(1684154014509.png);
+}
+
+nav{
+    width: 1074.73px;
+    height: 100px;
+    left: 921px;
+    top: 41px;
+
+}
+
+div.link{
+    margin: 0px 10px;
+    padding: 500px 1700px;
+    padding-bottom: 800px; 
+    font-family: 'Barlow';
+    font-style: italic;
+    font-weight: 700;
+    font-size: 40px;
+    word-spacing: 30px;
+    list-style: none;
+    color: black;
+}
+
+.link ul a{
+    transition: all 0.5s ease 0s;
+    text-decoration: none;
+    
+}
+
+.link ul a:hover{
+    color: #b0b0b0;
+    
+}
+
+.judult{
+    width: 1200px;
+    height: 70px;
+    left: 28.25px;
+    top: 3.53px;
+
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 140px;
+    line-height: 122px;
+    color: #FFFFFF;
+    padding-left: 120px;
+}
+
+.section1{
+    width: 900px;
+    height: 120px;
+    left: 28.25px;
+    top: 141.27px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 30px;
+    line-height: 50px;
+    color: #FFFFFF;
+    padding-left: 120px;
+    padding-bottom: 100px;
+}
+
+td.sectiondua{
+  
+    width: 404px;
+    height: auto;
+    left: 0px;
+    top: 142px;
+    font-family: 'Montserrat';
+    font-style: bold;
+    font-weight: 700;
+    font-size: 90px;
+    line-height: 59px;
+    color: #FFFFFF;
+    padding-left: 120px;
+}
+
+a{
+    color: white;
+    word-spacing: 100px;
+}
+
+.foto1{
+    padding-left: 120px;
+}
+
+.item{
+    padding-left: 180px;
+}
+
+table{
+    margin: 600px auto;
+
+}
+
+.brand{
+    font-size: 50px;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.brand tr a{
+    transition: all 0.5s ease 0s;
+    text-decoration: none;
+}
+
+.brand tr a:hover{
+    color: #b0b0b0;
+    
+}
+
+.logobuy{
+    width: 266.44px;
+    height: 77px;
+    left: 1369px;
+    top: 986px;
+}

@@ -1,0 +1,58 @@
+h1{
+    margin: 0 auto;
+}
+
+body{
+    background-image: url("../Gambar/background/23.png");
+    text-align: center;
+    color: white;
+}
+.logo3{
+    width: 251px;
+    height: 238px;
+    left: 64px;
+    top: 36px;
+    background: url("../Gambar/lainnya/payment1.png");
+}
+
+.logo4{
+    width: 341px;
+    height: 100px;
+    left: 64px;
+    top: 36px;
+
+    background: url("../Gambar/lainnya/payment2.png");
+}
+
+.logo5{
+    width: 261px;
+    height: 119px;
+    left: 742px;
+    top: 689px;
+
+    background: url("../Gambar/lainnya/payment3.png");
+}
+
+.padding3{
+    padding-left: 1350px;
+    color: white;
+}
+
+a{
+    text-align: center;
+    font-family: "Barlow";
+    font-style: italic;
+}
+
+a{
+    color: white;
+}
+
+.logo{
+    position: fixed;
+    width: 211px;
+    height: 158px;
+    left: 64px;
+    top: 36px;
+    background: url("../Gambar/logo/1684154014509.png");
+}
